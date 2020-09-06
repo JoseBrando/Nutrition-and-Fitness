@@ -1,0 +1,79 @@
+<header id="header">
+  <nav class="bg-gray">
+    <div [routerLink]="['/inicio']" class="pointer m-left-5" title="Inicio">
+      <img
+        src="../assets/images/logo.jpeg"
+        alt="img-logo"
+        class="tamanio-logo"
+      />
+    </div>
+
+    <div class="bg-gray" #menu>
+      <ul>
+        <li>
+          <a
+            [routerLink]="['/inicio']"
+            [routerLinkActive]="['link-active']"
+            (click)="funIconMenu()"
+            title="Inicio"
+            ><span class="fas fa-home"></span>Inicio</a
+          >
+        </li>
+        <li>
+          <a
+            [routerLink]="['/instalaciones']"
+            [routerLinkActive]="['link-active']"
+            (click)="funIconMenu()"
+            title="Conoce nuestras instalaciones"
+            ><span class="fas fa-boxes"></span>Instalaciones</a
+          >
+        </li>
+        <li>
+          <a
+            [routerLink]="['/gimnasio']"
+            [routerLinkActive]="['link-active']"
+            (click)="funIconMenu()"
+            title="Conoce nuestro gimnasio"
+            ><span class="fas fa-dumbbell"></span>Gimnasio</a
+          >
+        </li>
+        <li>
+          <a
+            [routerLink]="['/consultorio']"
+            [routerLinkActive]="['link-active']"
+            (click)="funIconMenu()"
+            title="Mejorando la calidad de vida"
+            ><span class="fas fa-notes-medical"></span>Consultorio</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nutrifitaca.com/blog/"
+            title="Conoce nuestros articulos"
+            ><span class="fas fa-blog"></span>Blog</a
+          >
+        </li>
+        <li>
+          <a
+            [routerLink]="['/curriculum']"
+            [routerLinkActive]="['link-active']"
+            (click)="funIconMenu()"
+            title="Curriculum"
+            ><span class="fas fa-file"></span>Curriculum</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <div>
+        <a href="mailto:Parra_kyle@hotmail.com" title="Envía un correo"
+          ><span class="fas fa-envelope"></span
+        ></a>
+        <a href="javascript:void(0)" (click)="funIconMenu()"
+          >Menú<span class="fas fa-bars" #iconMenu></span
+        ></a>
+      </div>
+    </div>
+  </nav>
+</header>
